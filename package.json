@@ -1,0 +1,23 @@
+{
+  "name": "iniciante",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "eslint": "^8.4.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "node-fetch": "^3.1.0",
+    "nodemon": "^2.0.15"
+  }
+}

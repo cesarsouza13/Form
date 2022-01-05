@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrados</title>
+    <style>
+
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(88, 187, 245), rgb(17, 54, 71));
+
+        }
+
+        h1{
+            color: #fff;
+           position: relative;
+           left: 8cm;
+           font-size: 0.8cm;
+       
+        }
+
+      #block .box{
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        position: absolute;
+        height: 19cm;
+        width: 22cm;
+        left: 7cm;
+        top: 3cm; 
+      }
+
+      #block .box div.home a{ 
+          position: relative;
+          left: 20cm;
+          top: -1cm;
+          padding: 10px;
+        background-color: dodgerblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif ;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+       
+      
+      #block .box .label button{
+          position: relative;
+          left: 8cm;
+          width: 2cm;
+          background-color: dodgerblue;
+          padding: 10px;
+          border-radius: 10px;
+          color: white;
+          cursor: pointer;
+      }
+      #block .box .label input{
+        position: relative;
+        left: 8cm;
+        padding: 10px;
+        
+            
+      }
+
+      #block .box .table table{
+       position: relative;
+       top: 0.5cm;
+       left: 2cm;   
+       width: 18cm;
+       background-color: rgba(40, 113, 185, 0.836);
+       color:seashell
+      }
+  
+
+    
+     
+        
+        #paginate .paginator{
+            display: flex;
+            position: fixed;
+            margin-top: 20.5cm;
+            margin-left: 14.5cm;
+            color: white;
+        }
+
+        #paginate .paginator div{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            
+        }
+
+        #paginate .paginator div:not(.numbers),
+        #paginate .paginator div.numbers div{
+            width: 40px;
+            height: 40px;
+         
+        }
+        
+
+
+        
+    </style>
+
+</head>
+<body>
+   <section id = "block">
+    <div class = "box">
+       
+        <form onsubmit = "fazget()">
+        <h1>Registration List</h1>
+          <div class = "home">
+            <a href="./index.html">HOME</a>
+          </div>  
+          <div class = "label">
+            <input name = "amount" id = "amount" type = "text" placeholder = "Enter the number" >
+            <button class = "amount" type = "submit">SEND</button>
+          </div>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script> 
+            <script src="./consult _users/get.js" defer></script>
+        </form>
+       <div class = "table">
+          <table id = "table" border="2">
+              <tr class = "tr">
+                       <td>Name</td>    
+                       <td>Email</td>  
+                       <td>Id</td>  
+                       <td>Position</td>  
+                </tr>
+                 <tbody id = "tbody">
+                    </tbody>
+            </table>
+        </div>
+        
+       
+    </div>
+</section>
+    <section id = "paginate">
+        <div class = "paginator">
+           <div class = "first">&#171;</div>
+           <div class = "prev">&lt;</div>
+           <div class = "numbers">
+               <div>1</div>
+            </div>
+            <div class = "next">&gt;</div>
+            <div class = "last">&#187;</div>
+    
+        </div>
+    </section>
+
+</body>
+</html>

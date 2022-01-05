@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(88, 187, 245), rgb(17, 54, 71));
+
+        }
+
+        .box{
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            padding: 50px;
+            border-radius: 15px;
+            color: white;
+    
+        }
+
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            
+        }
+     
+
+        input{
+            padding: 15px;
+            border: none;
+            outline-color: green;
+            font-size: 15px;
+        }
+    
+
+
+
+    </style>
+
+
+
+</head>  
+
+<body>
+    
+    <div class="box">
+    <script src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src = "./register_user/post.js"></script>   <!-- referenciando o arquivo js -->
+   
+    <form onsubmit = "cadastro()">
+
+        <h1> Create Account </h1>
+        <label for = "name" ></label>
+        <input name = "name" id = "name" type = "text" placeholder = "Name" >
+        <br><br>
+       <label for = "email" ></label>
+       <input name = "email" id = "email" type = "text" placeholder = "Email">
+       <br><br>
+       <label for = "password" ></label>
+       <input name = "password" id = "password" type = "text" placeholder = "Password">
+       <br><br>
+       <button type = "submit">Send</button>
+       <br><br>
+      
+       <button type="button">
+        <a href="./table.html">Consult</a>
+     </button>
+     <br><br>
+     <button type="button">
+        <a href="./change.html">Change registration</a>
+     </button>
+
+
+        
+    </form>
+</div>
+
+</body>
+</html>

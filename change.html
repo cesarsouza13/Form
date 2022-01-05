@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar cadastro</title>
+    <style>
+
+        h1{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 50%;
+            border-radius: 10px;
+            color: white;
+            
+        }
+
+        h2{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 50%;
+            border-radius: 10px;
+            color: white;
+
+        }
+
+        a{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 50%;
+            border-radius: 10px;
+            color: white;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, rgb(255, 254, 254),blue);
+        }
+
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 8px;
+            width: none;
+            border-radius: 10px;
+            color: white
+        }
+
+        input{
+            padding: 5px;
+            border: 3;
+            outline-color:green;
+            font-size: 15px;
+        }
+   
+       select{
+
+        padding: 5px;
+            border: 3;
+            outline-color:green;
+            font-size: 15px;
+       }
+
+        
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src = "./changed_user/put.js" ></script>
+    <form onsubmit = "fazput()">
+   <h1>Alterando dados</h1>
+   <label for = "_id"></label>
+   <input name = "_id" id = "_id" type = "text" placeholder="Enter with am ID">
+   <br><br>
+    <label for = "select" ></label>
+    <h2>Selecione o campo de alteração</h2>
+    <select id = "select">
+        <option name = "default" id = "default"> </option>
+        <option name = "name" id = "name">Name</option>
+        <option name = "Email" id = "Email">Email</option>
+        <option name = "password" id = "password">Password</option>
+    
+    
+    </select>
+        
+        <br><br>
+     
+        <label for = "new"></label> </label>
+        <input name = "new" id = "new" type  = "text" placeholder="Enter the new data">
+        <br><br>
+        <button type = "submit">Enviar novo dado</button>
+    </form>
+    <br><br>
+    <a href="./index.html">HOME</a>
+</body>
+</html>
